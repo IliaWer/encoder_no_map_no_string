@@ -4,8 +4,8 @@ using namespace std;
 int a=106;
 int c=1283;
 int m=26;
-int current_seed, choice;
-const int init_seed=1234;
+int choice;
+int current_seed=1234;
 int next_seed() {
     int current_seed = (a*current_seed+c)%m;
     return current_seed;
@@ -68,4 +68,5 @@ int main() {
             cout << decrypt(text[i]);
     }}
     return 0;
+
 }
